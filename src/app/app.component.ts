@@ -11,7 +11,8 @@ import { Component } from '@angular/core';
 
     <ul>
       <li *ngFor = "let dietItem of dietApp">
-      {{ dietItem.title}}
+        <app-diet-item [item] = "dietItem"></app-diet-item>
+      </li>
     </ul>
 
   `,
