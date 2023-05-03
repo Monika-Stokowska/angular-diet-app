@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DietItem } from './interfaces/diet-item';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-diet-app';
-  dietApp = [
+  dietApp: DietItem[] = [
     {title: 'take vitamin B12'},
     {title: 'take magnesium'},
     {title: 'take anti-allergy pill'},

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DietItem } from '../interfaces/diet-item';
 
 @Component({
   selector: 'app-diet-item',
@@ -9,7 +10,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class DietItemComponent implements OnInit {
 
-  @Input() item: any;
+  @Input() item: DietItem;
 
   constructor() {}
 
